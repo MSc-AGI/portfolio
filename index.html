@@ -14,8 +14,10 @@
         .cards { display: grid; grid-template-columns: 1fr; gap: 16px; }
         .card { background: #fff; border-radius: 8px; padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-left: 4px solid #005a82; transition: box-shadow 0.2s; }
         .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
-        .card-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+        .card-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; gap: 12px; }
         .card-title { font-size: 1.1em; font-weight: 600; color: #005a82; }
+        .card-meta { display: flex; gap: 8px; align-items: baseline; white-space: nowrap; }
+        .card-date { font-size: 0.78em; color: #888; font-weight: 500; }
         .card-tag { font-size: 0.75em; background: #e8f4f8; color: #005a82; padding: 2px 8px; border-radius: 4px; white-space: nowrap; }
         .card-desc { font-size: 0.92em; color: #444; margin-bottom: 10px; }
         .card-link { font-size: 0.85em; color: #005a82; text-decoration: none; font-weight: 500; }
@@ -34,80 +36,80 @@
         <div class="cards">
             <div class="card">
                 <div class="card-header">
-                    <span class="card-title">Hamilton Robotics: Connectivity Strategy</span>
-                    <span class="card-tag">IoT / Robotics</span>
-                </div>
-                <p class="card-desc">Strategic situation analysis (19 slides) and "Before Day One" readiness (13 slides) for laboratory automation connectivity. 5-layer architecture, competitive landscape, 3-horizon roadmap.</p>
-                <a class="card-link" href="https://github.com/MSc-AGI/Hamilton_Robotics" target="_blank">View on GitHub</a>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <span class="card-title">HappyRobot: Architecture Sketch</span>
-                    <span class="card-tag">AI / Robotics</span>
-                </div>
-                <p class="card-desc">Architecture sketch and product strategy for FDE DACH. AI-driven robotics platform analysis and technical design.</p>
-                <a class="card-link" href="https://github.com/MSc-AGI/happyrobot_architecture_fde_dach" target="_blank">View on GitHub</a>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <span class="card-title">Swiss Post: The AI Imperative</span>
-                    <span class="card-tag">AI Strategy</span>
-                </div>
-                <p class="card-desc">Strategic AI analysis (20 slides). Financial diagnosis, BCG Matrix, Porter's Five Forces. Three 18-month initiatives: digital twin logistics, AI co-pilots (30-50% process acceleration), Trustworthy AI Framework.</p>
-                <a class="card-link" href="https://github.com/MSc-AGI/SwissPostAI_Imperative" target="_blank">View on GitHub</a>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <span class="card-title">DeepJudge: Next-Gen Legal AI Platform</span>
-                    <span class="card-tag">Agentic AI / Platform</span>
-                </div>
-                <p class="card-desc">Product vision (43 slides) for evolving legal AI from retrieval to agentic workflows. Three-tier architecture, hybrid retrieval, Zero-Trust security, 90-day and 12-month roadmaps.</p>
-                <a class="card-link" href="https://github.com/MSc-AGI/DeepJudge" target="_blank">View on GitHub</a>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <span class="card-title">Lakera: AI Security for LLMs</span>
-                    <span class="card-tag">AI Security / SaaS</span>
-                </div>
-                <p class="card-desc">Product leadership analysis (20 slides) at Check Point acquisition inflection. Gandalf data moat (1M+ users, 80M+ adversarial prompts, 99.7% detection), 30-60-90 day plan.</p>
-                <a class="card-link" href="https://github.com/MSc-AGI/Lakera_Guard_Product_Leadership" target="_blank">View on GitHub</a>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <span class="card-title">Swiss Re: GenAI Transformation Strategy</span>
-                    <span class="card-tag">AI Strategy / Insurance</span>
-                </div>
-                <p class="card-desc">Two decks (11 + 12 slides). Dual-Engine Framework for claims and underwriting AI. Three-tier KPI framework, 30-90-365 day transformation plan. Competitive benchmarking Big Four reinsurers.</p>
-                <a class="card-link" href="https://github.com/MSc-AGI/SwissRe" target="_blank">View on GitHub</a>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <span class="card-title">J&amp;J E&amp;PS: Digital Transformation</span>
-                    <span class="card-tag">Digital Transformation</span>
-                </div>
-                <p class="card-desc">Strategy presentation (32 slides). $95M+ value opportunity across 250+ sites. Predictive maintenance, energy optimization, operational efficiency. Three-phase roadmap.</p>
-                <a class="card-link" href="https://github.com/MSc-AGI/EPS_DS" target="_blank">View on GitHub</a>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <span class="card-title">UML / System Architecture (MSc Thesis)</span>
-                    <span class="card-tag">AI Architecture</span>
-                </div>
-                <p class="card-desc">PlantUML sequence diagrams from MSc thesis (grade 1.0). LeCun's AMI architecture, Mode-1/Mode-2 perception-action loops, autonomous agent planning, embodied AI architecture.</p>
-                <a class="card-link" href="https://github.com/MSc-AGI/UML-Sequence-Diagrams" target="_blank">View on GitHub</a>
-            </div>
-            <div class="card">
-                <div class="card-header">
                     <span class="card-title">Applied ML: 3D Shape Detection</span>
-                    <span class="card-tag">ML Engineering</span>
+                    <span class="card-meta"><span class="card-date">Mar 2025</span><span class="card-tag">ML Engineering</span></span>
                 </div>
                 <p class="card-desc">CRISP-DM report (75 pages) + presentation (20 slides). Custom neural network for 3D point cloud shape detection from CNC production data. 99.63% accuracy, 517,011 parameters.</p>
                 <a class="card-link" href="https://github.com/MSc-AGI/APPLIED_ML" target="_blank">View on GitHub</a>
             </div>
             <div class="card">
                 <div class="card-header">
+                    <span class="card-title">Lakera: AI Security for LLMs</span>
+                    <span class="card-meta"><span class="card-date">Oct 2025</span><span class="card-tag">AI Security / SaaS</span></span>
+                </div>
+                <p class="card-desc">Product leadership analysis (20 slides) at Check Point acquisition inflection. Gandalf data moat (1M+ users, 80M+ adversarial prompts, 99.7% detection), 30-60-90 day plan.</p>
+                <a class="card-link" href="https://github.com/MSc-AGI/Lakera_Guard_Product_Leadership" target="_blank">View on GitHub</a>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Swiss Post: The AI Imperative</span>
+                    <span class="card-meta"><span class="card-date">Oct 2025</span><span class="card-tag">AI Strategy</span></span>
+                </div>
+                <p class="card-desc">Strategic AI analysis (20 slides). Financial diagnosis, BCG Matrix, Porter's Five Forces. Three 18-month initiatives: digital twin logistics, AI co-pilots (30-50% process acceleration), Trustworthy AI Framework.</p>
+                <a class="card-link" href="https://github.com/MSc-AGI/SwissPostAI_Imperative" target="_blank">View on GitHub</a>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">J&amp;J E&amp;PS: Digital Transformation</span>
+                    <span class="card-meta"><span class="card-date">Oct 2025</span><span class="card-tag">Digital Transformation</span></span>
+                </div>
+                <p class="card-desc">Strategy presentation (32 slides). $95M+ value opportunity across 250+ sites. Predictive maintenance, energy optimization, operational efficiency. Three-phase roadmap.</p>
+                <a class="card-link" href="https://github.com/MSc-AGI/EPS_DS" target="_blank">View on GitHub</a>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Swiss Re: GenAI Transformation Strategy</span>
+                    <span class="card-meta"><span class="card-date">Oct 2025</span><span class="card-tag">AI Strategy / Insurance</span></span>
+                </div>
+                <p class="card-desc">Two decks (11 + 12 slides). Dual-Engine Framework for claims and underwriting AI. Three-tier KPI framework, 30-90-365 day transformation plan. Competitive benchmarking Big Four reinsurers.</p>
+                <a class="card-link" href="https://github.com/MSc-AGI/SwissRe" target="_blank">View on GitHub</a>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">DeepJudge: Next-Gen Legal AI Platform</span>
+                    <span class="card-meta"><span class="card-date">Nov 2025</span><span class="card-tag">Agentic AI / Platform</span></span>
+                </div>
+                <p class="card-desc">Product vision (43 slides) for evolving legal AI from retrieval to agentic workflows. Three-tier architecture, hybrid retrieval, Zero-Trust security, 90-day and 12-month roadmaps.</p>
+                <a class="card-link" href="https://github.com/MSc-AGI/DeepJudge" target="_blank">View on GitHub</a>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Hamilton Robotics: Connectivity Strategy</span>
+                    <span class="card-meta"><span class="card-date">Feb 2026</span><span class="card-tag">IoT / Robotics</span></span>
+                </div>
+                <p class="card-desc">Strategic situation analysis (19 slides) and "Before Day One" readiness (13 slides) for laboratory automation connectivity. 5-layer architecture, competitive landscape, 3-horizon roadmap.</p>
+                <a class="card-link" href="https://github.com/MSc-AGI/Hamilton_Robotics" target="_blank">View on GitHub</a>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">UML / System Architecture (MSc Thesis)</span>
+                    <span class="card-meta"><span class="card-date">Feb 2026</span><span class="card-tag">AI Architecture</span></span>
+                </div>
+                <p class="card-desc">PlantUML sequence diagrams from MSc thesis (grade 1.0). LeCun's AMI architecture, Mode-1/Mode-2 perception-action loops, autonomous agent planning, embodied AI architecture.</p>
+                <a class="card-link" href="https://github.com/MSc-AGI/UML-Sequence-Diagrams" target="_blank">View on GitHub</a>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">HappyRobot: Architecture Sketch</span>
+                    <span class="card-meta"><span class="card-date">May 2026</span><span class="card-tag">AI / Robotics</span></span>
+                </div>
+                <p class="card-desc">Architecture sketch and product strategy for FDE DACH. AI-driven robotics platform analysis and technical design.</p>
+                <a class="card-link" href="https://github.com/MSc-AGI/happyrobot_architecture_fde_dach" target="_blank">View on GitHub</a>
+            </div>
+            <div class="card">
+                <div class="card-header">
                     <span class="card-title">Mapfre: Value Before Day One</span>
-                    <span class="card-tag">Insurance / Strategy</span>
+                    <span class="card-meta"><span class="card-date">May 2026</span><span class="card-tag">Insurance / Strategy</span></span>
                 </div>
                 <p class="card-desc">Pre-engagement strategy and value demonstration for Mapfre insurance. Product vision, market analysis, and readiness plan built entirely from public data.</p>
                 <a class="card-link" href="https://github.com/MSc-AGI/mapfre_value_before_day_one" target="_blank">View on GitHub</a>
